@@ -43,5 +43,5 @@ class View : public QMainWindow {
   void DrawPoints(const Controller::point_t&, QString&);
   void Draw(const Controller::point_t&, const QString& = "");
 };
-}  // namespace s21
+}  // namespace alg
 #endif  // VIEW_H
