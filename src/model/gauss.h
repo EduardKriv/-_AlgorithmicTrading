@@ -4,7 +4,7 @@
 #include <limits>
 #include <vector>
 
-namespace s21 {
+namespace alg {
 static const constexpr long double kEps =
     std::numeric_limits<double>::epsilon();
 class Gauss {
@@ -15,4 +15,4 @@ class Gauss {
   static auto GaussMethod(matrix_t&) -> vector_t;
   static auto LessOrEqual(double, double) -> bool;
 };
-}  // namespace s21
+}  // namespace alg

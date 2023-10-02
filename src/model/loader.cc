@@ -1,6 +1,6 @@
 #include "loader.h"
 
-namespace s21 {
+namespace alg {
 void Loader::LoadData(std::string path) {
   std::ifstream file(path);
 
@@ -60,4 +60,4 @@ void Loader::Data::PushBack(std::string date, long double x, long double y) {
   X_.push_back(x);
   Y_.push_back(y);
 }
-}  // namespace s21
+}  // namespace alg

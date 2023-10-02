@@ -5,8 +5,8 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    s21::Controller ctrl;
-    s21::View w(&ctrl);
+    alg::Controller ctrl;
+    alg::View w(&ctrl);
     w.show();
     return a.exec();
 }

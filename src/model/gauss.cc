@@ -1,6 +1,6 @@
 #include "gauss.h"
 
-namespace s21 {
+namespace alg {
 Gauss::vector_t Gauss::GaussMethod(matrix_t& sle_matrix) {
   size_t size = sle_matrix.size();
   for (size_t k = 0; k < size; k++) {
@@ -27,4 +27,4 @@ Gauss::vector_t Gauss::GaussMethod(matrix_t& sle_matrix) {
 bool Gauss::LessOrEqual(double a, double b) {
   return a < b || abs(a - b) < kEps;
 }
-}  // namespace s21
+}  // namespace alg

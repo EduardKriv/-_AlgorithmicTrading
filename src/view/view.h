@@ -15,12 +15,12 @@ class View;
 }
 QT_END_NAMESPACE
 
-namespace s21 {
+namespace alg {
 class View : public QMainWindow {
   Q_OBJECT
 
  public:
-  explicit View(s21::Controller* ctrl, QWidget* parent = nullptr);
+  explicit View(alg::Controller* ctrl, QWidget* parent = nullptr);
   ~View();
 
  private slots:
@@ -37,7 +37,7 @@ class View : public QMainWindow {
   Controller* ctrl_;
   Graphic* graphic_;
 
-  Controller::point_t ConvertDateToQdate(const s21::Loader::Data&);
+  Controller::point_t ConvertDateToQdate(const alg::Loader::Data&);
 
  signals:
   void DrawPoints(const Controller::point_t&, QString&);

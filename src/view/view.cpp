@@ -1,8 +1,8 @@
 #include "view.h"
 #include "./ui_view.h"
 
-namespace s21 {
-View::View(s21::Controller* ctrl, QWidget *parent)
+namespace alg {
+View::View(alg::Controller* ctrl, QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::View)
     , ctrl_(ctrl)
@@ -90,7 +90,7 @@ void View::on_pb_approximate_clicked()
     emit Draw(ConvertDateToQdate(ctrl_->CalcApproxPoints(ui->sb_approx_dot_amount->value(), extension)), ui->sb_polynom_degree->text());
 }
 
-Controller::point_t View::ConvertDateToQdate(const s21::Loader::Data& data) {
+Controller::point_t View::ConvertDateToQdate(const alg::Loader::Data& data) {
     float temp(0);
     Controller::point_t converted_data;
     QDateTime first_date = QDateTime::fromString(QString::fromStdString(data.date_.front()), "yyyy-MM-dd");
@@ -102,6 +102,6 @@ Controller::point_t View::ConvertDateToQdate(const s21::Loader::Data& data) {
 
     return converted_data;
 }
-}  // namespace s21
+}  // namespace alg
 
 

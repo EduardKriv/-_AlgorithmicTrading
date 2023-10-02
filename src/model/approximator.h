@@ -6,7 +6,7 @@
 #include "gauss.h"
 #include "loader.h"
 
-namespace s21 {
+namespace alg {
 class Approximator {
  public:
   explicit Approximator(Loader* loader) : loader_(loader) {}
@@ -19,4 +19,4 @@ class Approximator {
   Loader* loader_;
   std::vector<long double> coef_;
 };
-}  // namespace s21
+}  // namespace alg

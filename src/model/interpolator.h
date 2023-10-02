@@ -6,7 +6,7 @@
 #include "gauss.h"
 #include "loader.h"
 
-namespace s21 {
+namespace alg {
 class Interpolator {
  public:
   explicit Interpolator(Loader* loader) : loader_(loader) {}
@@ -21,4 +21,4 @@ class Interpolator {
   Loader* loader_;
   std::vector<std::vector<long double>> coef_;
 };
-}  // namespace s21
+}  // namespace alg

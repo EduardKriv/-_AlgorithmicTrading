@@ -4,7 +4,7 @@
 #include <iostream>
 #include <sstream>
 
-namespace s21 {
+namespace alg {
 class DateService {
  public:
   static tm* CreateDate(const std::string&);
@@ -14,4 +14,4 @@ class DateService {
  private:
   DateService() = default;
 };
-}  // namespace s21
+}  // namespace alg

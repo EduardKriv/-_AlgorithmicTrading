@@ -1,6 +1,6 @@
 #include "date_service.h"
 
-namespace s21 {
+namespace alg {
 tm* DateService::CreateDate(const std::string& string_date) {
   enum { YEAR, MON, DAY, HOUR, MIN };
   tm* currTm = new tm();
@@ -33,4 +33,4 @@ double DateService::ConvertDiffDateToDouble(const std::string& firts_date,
 
   return diff_date;
 }
-}  // namespace s21
+}  // namespace alg

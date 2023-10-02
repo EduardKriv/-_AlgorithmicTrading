@@ -7,7 +7,7 @@
 
 #include "date_service.h"
 
-namespace s21 {
+namespace alg {
 class Loader {
  public:
   struct Data {
@@ -28,4 +28,4 @@ class Loader {
  private:
   Data data_;
 };
-}  // namespace s21
+}  // namespace alg

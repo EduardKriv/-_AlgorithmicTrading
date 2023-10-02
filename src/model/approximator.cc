@@ -1,6 +1,6 @@
 #include "approximator.h"
 
-namespace s21 {
+namespace alg {
 void Approximator::Approximate(short N) {
   Gauss::vector_t X = loader_->GetData().X_;
   Gauss::vector_t Y = loader_->GetData().Y_;
@@ -73,4 +73,4 @@ double Approximator::GetValueByDateTime(const std::string &date_time) {
   }
   return yi;
 }
-}  // namespace s21
+}  // namespace alg

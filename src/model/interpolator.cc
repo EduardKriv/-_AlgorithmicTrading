@@ -1,6 +1,6 @@
 #include "interpolator.h"
 
-namespace s21 {
+namespace alg {
 void Interpolator::Interpolate() {
   const auto table_data = loader_->GetData();
   size_t size = table_data.date_.size();
@@ -90,4 +90,4 @@ double Interpolator::GetValueByDateTime(const std::string& date_time) {
         return left + powl(x - *x_end, j++) * right[coef_position];
       });
 }
-}  // namespace s21
+}  // namespace alg

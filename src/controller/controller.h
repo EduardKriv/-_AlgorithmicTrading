@@ -3,7 +3,7 @@
 #include "../model/approximator.h"
 #include "../model/interpolator.h"
 
-namespace s21 {
+namespace alg {
 class Controller {
  public:
   using point_t = std::vector<std::pair<QDateTime, long double>>;
@@ -44,4 +44,4 @@ class Controller {
   std::shared_ptr<Interpolator> interpolator_;
   std::shared_ptr<Approximator> approximator_;
 };
-}  // namespace s21
+}  // namespace alg
